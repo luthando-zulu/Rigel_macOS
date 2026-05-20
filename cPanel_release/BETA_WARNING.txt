@@ -1,0 +1,6 @@
+**TRIAL VERSION – FOR TESTING ONLY**
+
+- This is a **30-day trial**.
+- You may see a **Windows SmartScreen warning** — click **"More info" → "Run anyway"**.
+- Full version will be **code-signed and warning-free**.
+- Please report bugs to: info@stella-lumen.com

@@ -1,0 +1,26 @@
+# BYPASS WORDPRESS FOR DOWNLOADS – FIX 404
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /downloads/
+
+# If file exists, serve it directly (no WordPress rewrite)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise, let WordPress handle (but won't for files)
+RewriteRule . /index.php [L]
+</IfModule>
+
+# NO-CACHE FOR PDF (prevent browser issues)
+<FilesMatch "\.pdf$">
+Header set Cache-Control "no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "0"
+</FilesMatch>
+
+# SECURITY: Deny sensitive files
+<Files "Trial_Keys.csv">
+Order allow,deny
+Deny from all
+</Files>

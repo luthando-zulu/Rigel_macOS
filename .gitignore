@@ -1,0 +1,30 @@
+# Build artifacts
+build/
+dist/
+*.exe
+*.dmg
+*.pkg
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Data
+data/
+*.db
+*.sqlite3
+
+# Debug files
+*.log
+debug_*.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

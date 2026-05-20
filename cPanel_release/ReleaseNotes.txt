@@ -1,0 +1,71 @@
+===============================================================================
+  RIGEL BUSINESS v3.0.0 TRIAL - RELEASE NOTES
+  Stella Lumen (Pty) Ltd | www.stella-lumen.com
+  Release Date: November 10, 2025 | 11:12 PM SAST
+===============================================================================
+
+THANK YOU FOR USING THE TRIAL!
+
+This is a 30-day trial version for testing and feedback only.
+
+-------------------------------------------------------------------------------
+  WHAT'S NEW IN v3.0.0
+-------------------------------------------------------------------------------
+• Complete financial planning suite for small businesses
+• Interactive dashboards with real-time calculations
+• Automated cash flow forecasting (12-month projection)
+• Expense tracking with category breakdown
+• Income statement generator (PDF export)
+• Budget vs Actual variance analysis
+• Multi-currency support (ZAR, USD, EUR)
+• New UI with dark mode option
+• Splash screen with company branding
+
+-------------------------------------------------------------------------------
+  SYSTEM REQUIREMENTS
+-------------------------------------------------------------------------------
+• Windows 10 or 11 (64-bit recommended)
+• Microsoft Excel 2016 or later (32/64-bit)
+• 200 MB free disk space
+• Internet connection for activation
+
+-------------------------------------------------------------------------------
+  KNOWN ISSUES (Trial)
+-------------------------------------------------------------------------------
+• SmartScreen warning on first run – click "More info" → "Run anyway"
+• Minor UI lag on very large datasets (>50,000 rows)
+• PDF export may truncate long text in notes field
+
+-------------------------------------------------------------------------------
+  INSTALLATION INSTRUCTIONS
+-------------------------------------------------------------------------------
+1. Run the installer
+2. Accept the license agreement
+3. Choose installation folder (default: C:\Program Files\Stella Lumen\Rigel Business)
+4. Launch the app from desktop or Start Menu
+5. Enter your 30-day trial key when prompted
+
+-------------------------------------------------------------------------------
+  ACTIVATION
+-------------------------------------------------------------------------------
+Your unique trial key: [INSERT KEY FROM Trial_Keys.csv]
+Valid for 30 days from first use.
+
+-------------------------------------------------------------------------------
+  FEEDBACK & SUPPORT
+-------------------------------------------------------------------------------
+We need your input to make Rigel Business perfect!
+
+• Report bugs: support@stella-lumen.com
+• Feedback form: https://forms.gle/YourLinkHere
+• Include: Windows version, Excel version, screenshot if possible
+
+-------------------------------------------------------------------------------
+  LEGAL
+-------------------------------------------------------------------------------
+This is TRIAL software. Use at your own risk.
+No warranty provided. Not for commercial use.
+
+© 2025 Stella Lumen (Pty) Ltd | Registration: 2020/123456/07
+All rights reserved.
+===============================================================================
