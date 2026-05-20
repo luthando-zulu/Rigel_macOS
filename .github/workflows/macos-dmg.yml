@@ -26,14 +26,15 @@ jobs:
           - build_type: Trial
             trial_mode: "true"
             app_name: "RIGEL Business Trial.app"
-            dmg_name: "RIGEL-Business-Trial"
+            volume_name: "RIGEL Business Trial"
           - build_type: Full
             trial_mode: "false"
             app_name: "RIGEL Business.app"
-            dmg_name: "RIGEL-Business"
+            volume_name: "RIGEL Business"
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -51,18 +52,21 @@ jobs:
           echo "Building ${{ matrix.build_type }} version..."
           python ${{ env.SETUP_SCRIPT }} py2app
           
-          # Rename the output app
+          # Rename output if needed
           if [ -d "dist/RIGEL Business.app" ]; then
             mv "dist/RIGEL Business.app" "dist/${{ matrix.app_name }}"
+          elif [ -d "dist/rigel_main.app" ]; then
+            mv "dist/rigel_main.app" "dist/${{ matrix.app_name }}"
           fi
+
+          ls -la dist/
 
       - name: Create DMG
         run: |
-          VERSION="${{ github.event.inputs.version || 'dev' }}"
-          DMG_NAME="${{ matrix.dmg_name }}-${VERSION}.dmg"
+          DMG_NAME="RIGEL-Business-${{ matrix.build_type }}-${{ github.event.inputs.version || 'dev' }}.dmg"
           
           create-dmg \
-            --volname "RIGEL Business ${{ matrix.build_type }}" \
+            --volname "${{ matrix.volume_name }}" \
             --window-size 660 420 \
             --icon-size 128 \
             --app-drop-link 480 190 \
@@ -70,4 +74,4 @@ jobs:
             "$DMG_NAME" \
             "dist/${{ matrix.app_name }}"
           
-          echo "DMG created: $DMG_NAME"
+          echo "✅ DMG created: $DMG_NAME"
